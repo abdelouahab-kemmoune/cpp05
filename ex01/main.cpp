@@ -17,7 +17,7 @@ int main() {
     try
     {
         Form  a("form", 60, 40);
-        Bureaucrat b("cris", 60);
+        Bureaucrat b("cris", 70);
         b.increment();
         b.signForm(a);
         std::cout << a << std::endl;

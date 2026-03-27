@@ -20,8 +20,7 @@ int main() {
     //
     try
     {
-        srand(time(NULL));
-        Bureaucrat slave("Ismail", 200);
+        Bureaucrat slave("Ismail", 45);
         ShrubberyCreationForm   tree("Home");
         RobotomyRequestForm     robot("kouzina");
         PresidentialPardonForm  pardon("space");

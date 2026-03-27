@@ -44,8 +44,6 @@ AForm* create_PresidentialPardonForm(const std::string &target) {
     return (new PresidentialPardonForm(target));
 }
 
-// typedef *AForm *(Total)
-
 AForm* Intern::makeForm(const std::string &_form_name, const std::string &_form_target)
 {
     std::string	shrubbery_name = "shrubbery creation" ;
@@ -54,7 +52,7 @@ AForm* Intern::makeForm(const std::string &_form_name, const std::string &_form_
 
     std::string call[3] = {shrubbery_name, robotomy_name, pardon_name};
     AForm *(*creators[3])(const std::string &) = {
-    &create_ShrubberyCreationForm, &create_RobotomyRequestForm, &create_PresidentialPardonForm};
+    create_ShrubberyCreationForm, create_RobotomyRequestForm, create_PresidentialPardonForm};
 
     int i = 0;
     while (i < 3)

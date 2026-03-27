@@ -15,7 +15,7 @@
 int main() {
     try
     {
-        Bureaucrat  a("ronaldo", 151);
+        Bureaucrat  a("ronaldo", 150);
         a.decrement();
         std::cout << a << std::endl;
         a.increment();

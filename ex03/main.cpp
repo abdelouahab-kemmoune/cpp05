@@ -20,6 +20,6 @@
 int main() {
     Intern someRandomIntern;
     AForm* rrf;
-    rrf = someRandomIntern.makeForm("rhhhhhh", "Bender");
+    rrf = someRandomIntern.makeForm("shrubbery ", "Bender");
     delete rrf;
 }
