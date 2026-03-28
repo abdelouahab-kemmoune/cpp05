@@ -57,27 +57,15 @@ int Bureaucrat::getGrade() const {
 }
 
 void Bureaucrat::increment() {
-    try {
-        _grade--;
-        if (_grade < 1)
-            throw Bureaucrat::GradeTooHighException();
-    }
-    catch (std::exception &e)
-    {
-        std::cerr << e.what() << "\n";
-    }
+    _grade--;
+    if (_grade < 1)
+        throw Bureaucrat::GradeTooHighException();
 }
 
 void Bureaucrat::decrement() {
-    try {
-        _grade++;
-        if (_grade > 150)
-            throw Bureaucrat::GradeTooLowException();
-    }
-    catch (std::exception &e)
-    {
-        std::cerr << e.what() << "\n";
-    }
+    _grade++;
+    if (_grade > 150)
+        throw Bureaucrat::GradeTooLowException();
 }
 
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& b) {
